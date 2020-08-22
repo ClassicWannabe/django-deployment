@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'basicapp/base.html' %}
+  {% load myfilters %}
+  {% block body_block %}
+  <h1>Welcome to index</h1>
+  <h1>{{text|rtx:'world'}}<br>
+    {{number|add:'99'}}
+  </h1>
+
+  {% endblock %}
